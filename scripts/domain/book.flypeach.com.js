@@ -7,6 +7,7 @@ var CHECKData = function () {
         var a = arrDestination[e].split('|');
         result += a[0] + '-' + a[2] + ',';
       }
+    }
     return result;
   }
 }
