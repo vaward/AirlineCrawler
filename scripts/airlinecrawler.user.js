@@ -7,8 +7,14 @@
 // @include     http://www.airasia.com/cn/zh/home.page
 // @include     http://www.aircaraibes-usa.com/
 // @include     http://www.malindoair.com/
+// @include     http://www.srilankan.com/
+// @include     http://flights.thomson.co.uk/thomson/en-GB/timetable/default
+// @include     http://www.nokair.com/nokconnext/aspx/flightschedule.aspx
+// @include	 http://fly.airalgerie.dz/CAB/IBE/SearchAvailability.aspx
+// @include	 http://www.flymango.com/
+// @include	 http://www.tuifly.com/en/flug/timetable.jsp
 // @exclude     http://*.qunar.com/*
-// @version     1.1
+// @version     1.2
 // @grant       none
 // ==/UserScript==
 

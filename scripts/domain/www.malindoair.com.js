@@ -17,3 +17,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
+//alert(new CHECKData().getData('www.malindoair.com'));

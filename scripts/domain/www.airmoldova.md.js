@@ -12,3 +12,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
+//alert(new CHECKData().getData('www.airmoldova.md'));

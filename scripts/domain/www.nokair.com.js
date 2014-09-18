@@ -1,16 +1,15 @@
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
-		if (domain == 'www.airasia.com') {
-			var routes_table = SKYSALES.Resource.marketInfo.MarketList;
+		if (domain == 'www.nokair.com') {
 			for (ap in routes_table) {
 				dep = ap;
 				for (var i = 0; i < routes_table[dep].length; i++) {
-					result += dep + '-' + routes_table[dep][i].code + ',';
+					result+= dep + "-" + routes_table[dep][i].code + ",";
 				}
 			}
 		}
 		return result;
 	}
 }
-//alert(new CHECKData().getData('www.airasia.com'));
+//alert(new CHECKData().getData('www.nokair.com'));

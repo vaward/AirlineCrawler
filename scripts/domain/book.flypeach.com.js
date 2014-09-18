@@ -10,3 +10,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
+//alert(new CHECKData().getData('book.flypeach.com'));
