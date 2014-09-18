@@ -8,6 +8,6 @@ var CHECKData = function() {
 					result += dep + '-' + arr + ',';
 				}
 			}
-			return result;
 		}
+		return result;
 	}
