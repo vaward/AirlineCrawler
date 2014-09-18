@@ -6,8 +6,9 @@
 // @include     http://book.flypeach.com/
 // @include     http://www.airasia.com/cn/zh/home.page
 // @include     http://www.aircaraibes-usa.com/
+// @include     http://www.malindoair.com/
 // @exclude     http://*.qunar.com/*
-// @version     1
+// @version     1.1
 // @grant       none
 // ==/UserScript==
 
