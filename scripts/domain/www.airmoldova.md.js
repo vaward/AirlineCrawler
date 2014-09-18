@@ -11,3 +11,4 @@ var CHECKData = function() {
 		}
 		return result;
 	}
+}
