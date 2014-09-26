@@ -15,4 +15,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('www.tuifly.com'));
+//alert(new CHECKData().getData(window.location.host));
