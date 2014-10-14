@@ -1,5 +1,10 @@
+/*
+@url:https://www.adria.si/en/
+@name:亚德里亚航空公司 需要临时关闭ssl 错误
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
+		document.getElementById("backgrounds").remove();
 		var result = "";
 		if (domain == 'www.adria.si') {
 			var html = document.documentElement.outerHTML;

@@ -1,3 +1,7 @@
+/*
+@url:http://www.malindoair.com/
+@name: ÂíÓ¡º½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -16,5 +20,7 @@ var CHECKData = function() {
 		}
 		return result;
 	}
-} //alert(new CHECKData().getData('www.malindoair.com'));
+} 
+//alert(new CHECKData().getData(window.location.host));
+
 

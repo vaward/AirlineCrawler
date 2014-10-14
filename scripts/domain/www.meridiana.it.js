@@ -1,3 +1,7 @@
+/*
+@url:https://www.meridiana.it/home/index/en/
+@name:×ÓÎçº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";

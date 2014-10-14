@@ -1,3 +1,7 @@
+/*
+@url:http://www.twayair.com/service/reserve_route_Global.aspx
+@name:µÂÍþº½¿Õ
+*/
 var CHECKData = function() {
 	this.init = function() {
 		var t = "var aps = [];\n";

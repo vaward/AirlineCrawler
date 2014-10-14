@@ -1,3 +1,7 @@
+/*
+@url:http://book.flypeach.com/
+@name:¿÷Ã“∫Ωø’
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -10,4 +14,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('book.flypeach.com'));
+//alert(new CHECKData().getData(window.location.host));

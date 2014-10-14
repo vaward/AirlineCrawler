@@ -1,3 +1,7 @@
+/*
+@url:https://booking.xpressair.co.id/EAStart.aspx?New=1&Language=en&CurrencyOverride=IDR
+@name:Xpressº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -19,4 +23,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-alert(new CHECKData().getData(window.location.host));
+//alert(new CHECKData().getData(window.location.host));

@@ -1,3 +1,7 @@
+/*
+@url:http://us.aircalin.com/billet-noumea.php?cc=USA
+@name:ø¶¿Ô∂‡ƒ·—«∫Ωø’
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";

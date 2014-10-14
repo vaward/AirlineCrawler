@@ -1,3 +1,7 @@
+/*
+@url:http://book.hkexpress.com/
+@name:œ„∏€øÏ‘À
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";

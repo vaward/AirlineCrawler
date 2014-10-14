@@ -1,3 +1,7 @@
+/*
+@url:http://wftc2.e-travel.com/plnext/FPCairdolomiti/TimeTableSearchDispatcher.action?SITE=BAPRBAPR&LANGUAGE=GB
+@name:¶àÂÞÃ×µÙº½¿Õ  www.airdolomiti.eu  timetable
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -17,4 +21,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('wftc2.e-travel.com'));
+//alert(new CHECKData().getData(window.location.host));

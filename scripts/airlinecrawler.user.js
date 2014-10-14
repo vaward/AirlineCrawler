@@ -13,7 +13,7 @@
 // @include	 http://fly.airalgerie.dz/CAB/IBE/SearchAvailability.aspx
 // @include	 http://www.flymango.com/
 // @include	 http://www.tuifly.com/en/flug/timetable.jsp
-// @include	 http://wftc2.e-travel.com/plnext/FPCairdolomiti/TimeTableSearchDispatcher.action
+// @include	 http://wftc2.e-travel.com/plnext/FPCairdolomiti/TimeTableSearchDispatcher.action*
 // @include	 http://customer3.videcom.com/ProflightZambia/VARS/Public/CustomerPanels/*
 // @include	 http://www.bmiregional.com/en/
 // @include	 http://www.goair.in/
@@ -24,8 +24,9 @@
 // @include	 http://www.laoairlines.com/
 // @include	 https://www.adria.si/en/
 // @include	 http://flyairone.com/EN-EU/
-// @include	 https://*.sita.aero/itd/itd
-// @include	 http://us.aircalin.com/
+// @include	 https://bookingseychelles.sita.aero/itd/itd*
+// @include	 https://airnamibia.sita.aero/itd/itd*
+// @include	 http://us.aircalin.com/billet-noumea.php?cc=USA*
 // @include	 https://www.bintercanarias.com/eng
 // @include	 http://www.aircosta.in/ebooking/home/default.aspx
 // @include	 https://www.meridiana.it/home/index/en/
@@ -42,43 +43,9 @@
 // @include	 http://www.flyscoot.com/index.php/zh/
 // @include	 http://www.twayair.com/service/reserve_route_Global.aspx
 // @exclude     http://*.qunar.com/*
-// @version     1.3
+// @version     1.4
 // @grant       none
 // ==/UserScript==
-/*
-
-    http://wftc2.e-travel.com/plnext/FPCairdolomiti/TimeTableSearchDispatcher.action   多罗米蒂航空 www.airdolomiti.eu  timetable
-	http://customer3.videcom.com/ProflightZambia/VARS/Public/CustomerPanels/Requirements.aspx?currency=USD  赞比亚航空 
-	http://www.bmiregional.com/en/   英伦区域航空
-	http://www.goair.in/ 印度飞天航
-	http://www.flyorientthai.com 泰国东方航空
-	www.eastarjet.com  韩国易斯达航空	
-	http://www.skytrans.com.au/  泽天航空
-	www.xpressair.co.id	Xpress航空
-	www.laoairlines.com   老挝航空
-	www.adria.si 亚德里亚航空公司
-	flyairone.com Air One 航空 
-	www.airnamibia.com.na 纳米比亚航空	 https://airnamibia.sita.aero/itd/itd
-	http://www.airseychelles.com/en/home/index.php  塞舌尔航空 https://bookingseychelles.sita.aero/itd/itd
-	http://us.aircalin.com/  
-	https://www.bintercanarias.com/eng
-	www.aircosta.in 考斯达航空
-	https://www.meridiana.it
-	book.hkexpress.com  香港快运
-	www.tigerair.com  虎航
-	www.virginamerica.com 维珍美国
-	http://www.flybe.com/route-map/  
-
-	http://www.amaszonas.com/
-	http://www.airarabia.com/en   阿拉伯航空  
-	http://global.shenzhenair.com/zh/main.jsp   深圳航空
-	http://www.liat.com/  背风群岛航空
-	http://www.atlasjet.com/	 阿特拉斯喷气航空	
-	https://www.etihadregional.com/en/index.html  达尔文航空
-	http://www.flyscoot.com/index.php/zh/  酷航
-	www.twayair.com		德威航空	
-
-*/
 
 var domain = window.location.host;
 var oHead = document.getElementsByTagName('HEAD').item(0);
@@ -102,6 +69,9 @@ document.addEventListener('dblclick', function (event) {
 	  textarea.style.height = "200px";
 	  textarea.style.fontSize = '14px';
     document.body.insertBefore(textarea, document.body.firstChild);
+	if(document.location.protocol=="https:"){
+		airlinetext.innerHTML="该网站是https的，chrome 用户不支持，firefox 用户，注意地址栏左边提示，可能需要点击选择 临时解除保护此页";
+	}
   }
   // 如果您想阻止默认点击动作
   // (例如链接转向)，使用下面这两条命令：

@@ -1,3 +1,7 @@
+/*
+@url:http://www.flyscoot.com/index.php/zh/
+@name: ¿áº½
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -21,5 +25,6 @@ var CHECKData = function() {
 		}
 		return result;
 	}
-} //alert(new CHECKData().getData(window.location.host).length/8);
+}
+//alert(new CHECKData().getData(window.location.host).length/8);
 

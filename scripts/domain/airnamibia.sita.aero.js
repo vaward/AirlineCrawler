@@ -1,3 +1,7 @@
+/*
+@url:https://airnamibia.sita.aero/itd/itd
+@name:ÄÉÃ×±ÈÑÇº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -21,5 +25,5 @@ var CHECKData = function() {
 		}
 		return result;
 	}
-} //alert(new CHECKData().getData(window.location.host));
-
+}
+//alert(new CHECKData().getData(window.location.host));

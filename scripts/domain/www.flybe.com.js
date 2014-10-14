@@ -1,3 +1,7 @@
+/*
+@url:http://www.flybe.com/route-map/
+@name:flybeº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";

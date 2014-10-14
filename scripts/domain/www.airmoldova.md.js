@@ -1,3 +1,7 @@
+/*
+@url:http://www.airmoldova.md/home-en/
+@name:Ä¦¶û¶àÍßº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -12,4 +16,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('www.airmoldova.md'));
+//alert(new CHECKData().getData(window.location.host));

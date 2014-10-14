@@ -1,3 +1,7 @@
+/*
+@url:http://www.tuifly.com/en/flug/timetable.jsp 
+@name:м╬рв╥и╨╫©у
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";

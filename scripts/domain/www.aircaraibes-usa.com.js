@@ -1,3 +1,7 @@
+/*
+@url:http://www.aircaraibes-usa.com/
+@name: º”¿’±»∫£∫Ωø’
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -11,4 +15,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('www.aircaraibes-usa.com'));
+//alert(new CHECKData().getData(window.location.host));

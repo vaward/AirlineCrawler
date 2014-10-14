@@ -1,3 +1,7 @@
+/*
+@url:http://fly.airalgerie.dz/CAB/IBE/SearchAvailability.aspx  
+@name:°¢¶û¼°ÀûÑÇº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -13,4 +17,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('fly.airalgerie.dz'));
+//alert(new CHECKData().getData(window.location.host));

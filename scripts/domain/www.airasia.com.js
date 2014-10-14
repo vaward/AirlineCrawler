@@ -1,3 +1,7 @@
+/*
+@url:http://www.airasia.com/cn/zh/home.page
+@name: ÑÇÖÞº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -13,4 +17,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('www.airasia.com'));
+//alert(new CHECKData().getData(window.location.host));

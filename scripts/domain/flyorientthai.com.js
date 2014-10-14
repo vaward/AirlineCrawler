@@ -1,6 +1,6 @@
 /*
-@url:http://book.flypeach.com/
-@name:ÀÖÌÒº½¿Õ
+@url:http://flyorientthai.com/en/home/?Language=Eng
+@name:Ì©¹ú¶«·½º½¿Õ
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

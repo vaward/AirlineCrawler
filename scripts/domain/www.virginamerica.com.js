@@ -1,3 +1,7 @@
+/*
+@url:https://www.virginamerica.com/book
+@name:Œ¨’‰√¿π˙∫Ωø’
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";

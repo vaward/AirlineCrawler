@@ -1,3 +1,7 @@
+/*
+@url:http://www.flymango.com/ 
+@name:Ã¢¹ûº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -17,4 +21,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('www.flymango.com'));
+//alert(new CHECKData().getData(window.location.host));

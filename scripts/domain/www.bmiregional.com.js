@@ -1,3 +1,7 @@
+/*
+@url:http://www.bmiregional.com/en/
+@name:Ó¢Â×ÇøÓòº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";

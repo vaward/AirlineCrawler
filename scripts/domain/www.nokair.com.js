@@ -1,3 +1,7 @@
+/*
+@url:http://www.nokair.com/nokconnext/aspx/flightschedule.aspx
+@name:·ÉÄñº½¿Õ
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
@@ -12,4 +16,4 @@ var CHECKData = function() {
 		return result;
 	}
 }
-//alert(new CHECKData().getData('www.nokair.com'));
+//alert(new CHECKData().getData(window.location.host));

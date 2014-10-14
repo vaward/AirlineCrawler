@@ -1,3 +1,7 @@
+/*
+@url:http://www.eastarjet.com   
+@name:韩国易斯达航空
+*/
 var CHECKData = function() {
 	this.getData = function(domain) {
 		var result = "";
