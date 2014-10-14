@@ -1,6 +1,6 @@
 /*
 @url:http://www.eastarjet.com   
-@name:º«¹úÒ×Ë¹´ïº½¿Õ
+@name:éŸ©å›½æ˜“æ–¯è¾¾èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

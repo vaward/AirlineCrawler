@@ -1,6 +1,6 @@
 /*
 @url:http://www.flymango.com/ 
-@name:Ã¢¹ûº½¿Õ
+@name:èŠ’æžœèˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

@@ -1,6 +1,6 @@
 /*
 @url:https://www.virginamerica.com/book
-@name:Î¬ÕäÃÀ¹úº½¿Õ
+@name:ç»´çç¾å›½èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

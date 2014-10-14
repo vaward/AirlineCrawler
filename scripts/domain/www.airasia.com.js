@@ -1,6 +1,6 @@
 /*
 @url:http://www.airasia.com/cn/zh/home.page
-@name: ÑÇÖÞº½¿Õ
+@name: äºšæ´²èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

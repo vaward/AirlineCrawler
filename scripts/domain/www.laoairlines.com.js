@@ -1,6 +1,6 @@
 /*
 @url:http://www.laoairlines.com    
-@name:ÀÏÎÎº½¿Õ
+@name:è€æŒèˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

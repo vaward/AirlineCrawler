@@ -1,6 +1,6 @@
 /*
 @url:http://www.nokair.com/nokconnext/aspx/flightschedule.aspx
-@name:·ÉÄñº½¿Õ
+@name:é£žé¸Ÿèˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

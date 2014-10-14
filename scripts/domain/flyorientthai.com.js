@@ -1,6 +1,6 @@
 /*
 @url:http://flyorientthai.com/en/home/?Language=Eng
-@name:Ì©¹ú¶«·½º½¿Õ
+@name:æ³°å›½ä¸œæ–¹èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

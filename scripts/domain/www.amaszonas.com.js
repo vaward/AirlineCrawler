@@ -1,6 +1,6 @@
 /*
 @url:http://www.amaszonas.com/
-@name:²£ÀûÎ¬ÑÇº½¿Õ
+@name:çŽ»åˆ©ç»´äºšèˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

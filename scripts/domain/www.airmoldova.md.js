@@ -1,6 +1,6 @@
 /*
 @url:http://www.airmoldova.md/home-en/
-@name:Ä¦¶û¶àÍßº½¿Õ
+@name:æ‘©å°”å¤šç“¦èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

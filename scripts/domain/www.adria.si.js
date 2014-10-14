@@ -1,6 +1,6 @@
 /*
 @url:https://www.adria.si/en/
-@name:亚德里亚航空公司 需要临时关闭ssl 错误
+@name:浜氬痉閲屼簹鑸┖鍏徃 闇�瑕佷复鏃跺叧闂璼sl 閿欒
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

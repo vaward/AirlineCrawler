@@ -1,6 +1,6 @@
 /*
 @url:http://book.flypeach.com/
-@name:ÀÖÌÒº½¿Õ
+@name:ä¹æ¡ƒèˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

@@ -1,6 +1,6 @@
 /*
 @url:http://www.liat.com/
-@name:±³·çÈºµºº½¿Õ
+@name:èƒŒé£Žç¾¤å²›èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

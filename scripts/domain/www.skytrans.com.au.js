@@ -1,6 +1,6 @@
 /*
 @url:http://www.skytrans.com.au/
-@name:ÔóÌìº½¿Õ
+@name:æ³½å¤©èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

@@ -1,6 +1,6 @@
 /*
 @url:http://us.aircalin.com/billet-noumea.php?cc=USA
-@name:喀里多尼亚航空
+@name:鍠�閲屽灏间簹鑸┖
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

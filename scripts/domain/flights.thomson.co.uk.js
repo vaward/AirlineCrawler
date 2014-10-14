@@ -1,6 +1,6 @@
 /*
 @url:http://flights.thomson.co.uk/thomson/en-GB/timetable/default
-@name:ÌÀÆÕÉ­º½¿Õ
+@name:æ±¤æ™®æ£®èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

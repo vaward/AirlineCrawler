@@ -1,6 +1,6 @@
 /*
 @url:http://www.goair.in/
-@name:Ó¡¶È·ÉÌìº½¿Õ
+@name:å°åº¦é£å¤©èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

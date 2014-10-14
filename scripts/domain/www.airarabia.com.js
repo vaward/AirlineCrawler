@@ -1,6 +1,6 @@
 /*
 @url:http://www.airarabia.com/en
-@name:°¢À­²®º½¿Õ
+@name:é˜¿æ‹‰ä¼¯èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

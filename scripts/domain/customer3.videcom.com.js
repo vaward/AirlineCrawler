@@ -1,6 +1,6 @@
 /*
 @url:http://customer3.videcom.com/ProflightZambia/VARS/Public/CustomerPanels/Requirements.aspx?currency=USD  
-@name:ÔÞ±ÈÑÇº½¿Õ
+@name:èµžæ¯”äºšèˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

@@ -1,6 +1,6 @@
 /*
 @url:http://www.aircosta.in/ebooking/home/default.aspx
-@name:¿¼Ë¹´ïº½¿Õ
+@name:è€ƒæ–¯è¾¾èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

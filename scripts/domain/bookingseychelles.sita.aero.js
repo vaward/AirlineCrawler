@@ -1,6 +1,6 @@
 /*
 @url:https://bookingseychelles.sita.aero/itd/itd
-@name:ÈûÉà¶ûº½¿Õ
+@name:å¡žèˆŒå°”èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

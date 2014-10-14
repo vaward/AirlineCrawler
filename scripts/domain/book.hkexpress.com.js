@@ -1,6 +1,6 @@
 /*
 @url:http://book.hkexpress.com/
-@name:Ïã¸Û¿ìÔË
+@name:é¦™æ¸¯å¿«è¿
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

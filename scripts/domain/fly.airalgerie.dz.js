@@ -1,6 +1,6 @@
 /*
 @url:http://fly.airalgerie.dz/CAB/IBE/SearchAvailability.aspx  
-@name:°¢¶û¼°ÀûÑÇº½¿Õ
+@name:é˜¿å°”åŠåˆ©äºšèˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

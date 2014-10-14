@@ -1,6 +1,6 @@
 /*
 @url:https://www.etihadregional.com/en/index.html
-@name:´ï¶ûÎÄº½¿Õ
+@name:è¾¾å°”æ–‡èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

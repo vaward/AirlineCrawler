@@ -1,6 +1,6 @@
 /*
 @url:http://www.tigerair.com/sg/en/
-@name:»¢º½
+@name:è™Žèˆª
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

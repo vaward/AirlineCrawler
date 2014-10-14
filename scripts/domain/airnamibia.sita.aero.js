@@ -1,6 +1,6 @@
 /*
 @url:https://airnamibia.sita.aero/itd/itd
-@name:ÄÉÃ×±ÈÑÇº½¿Õ
+@name:çº³ç±³æ¯”äºšèˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

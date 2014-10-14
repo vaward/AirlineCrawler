@@ -1,6 +1,6 @@
 /*
 @url:http://www.srilankan.com/
-@name:Ë¹ÀïÀ¼¿¨
+@name:æ–¯é‡Œå…°å¡
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

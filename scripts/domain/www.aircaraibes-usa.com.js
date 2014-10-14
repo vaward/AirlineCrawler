@@ -1,6 +1,6 @@
 /*
 @url:http://www.aircaraibes-usa.com/
-@name: ¼ÓÀÕ±Èº£º½¿Õ
+@name: åŠ å‹’æ¯”æµ·èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

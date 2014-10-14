@@ -1,6 +1,6 @@
 /*
 @url:http://www.atlasjet.com/en
-@name:阿特拉斯喷气航空
+@name:闃跨壒鎷夋柉鍠锋皵鑸┖
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

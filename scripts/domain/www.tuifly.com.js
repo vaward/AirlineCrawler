@@ -1,6 +1,6 @@
 /*
 @url:http://www.tuifly.com/en/flug/timetable.jsp 
-@name:;�׷ɺ���
+@name:途易飞航空
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

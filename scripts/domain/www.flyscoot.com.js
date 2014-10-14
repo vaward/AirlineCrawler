@@ -1,6 +1,6 @@
 /*
 @url:http://www.flyscoot.com/index.php/zh/
-@name: �ẽ
+@name: 酷航
 */
 var CHECKData = function() {
 	this.getData = function(domain) {

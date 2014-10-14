@@ -1,6 +1,6 @@
 /*
 @url:https://flyairone.com/EN-EU/
-@name: Air One º½¿Õ  ¹ıÆÚ|²»Ö§³Ö
+@name: Air One èˆªç©º  è¿‡æœŸ|ä¸æ”¯æŒ
 */
 var CHECKData = function() {
 	this.getData = function(domain) {
@@ -13,7 +13,7 @@ var CHECKData = function() {
 					result += dep + '-' + routes_table[dep][i].code + ',';
 				}
 			}*/
-			result = "ËÑË÷ºÜ¶àº½Ë¾Êı¾İ×éºÏ£¬ÎŞ·¨»ñµÃsuggest";
+			result = "æœç´¢å¾ˆå¤šèˆªå¸æ•°æ®ç»„åˆï¼Œæ— æ³•è·å¾—suggest";
 		}
 		return result;
 	}

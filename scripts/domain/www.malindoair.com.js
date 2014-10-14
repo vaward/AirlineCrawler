@@ -1,6 +1,6 @@
 /*
 @url:http://www.malindoair.com/
-@name: ÂíÓ¡º½¿Õ
+@name: é©¬å°èˆªç©º
 */
 var CHECKData = function() {
 	this.getData = function(domain) {
