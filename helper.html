@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head> 
+  <title>
+            AirlineCrawlerHelper
+        </title> 
+  <meta name="Generator" content="EditPlus" /> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="Author" content="QT-Shaxiong.xie" /> 
+  <meta name="Keywords" content="AirlineCrawlerHelper" /> 
+  <meta name="Description" content="AirlineCrawlerHelper" /> 
+ </head> 
+ <body> 
+  <textarea id="jsresult" name="jsresult" rows="24" cols="180"> </textarea> 
+  <script language="JavaScript">
+		<!--
+			function createjs(formid){			
+				var obj = document.getElementById(formid);
+				var jqs = obj.jq;
+				var jqv = 0;
+				for (var i=0; i<jqs.length ;i++ )
+				{
+					if(jqs[i].checked){
+						jqv = jqs[i].value;
+					}
+				}
+				var bss = obj.bs;
+				var bsv = 0;
+				for (var i=0; i<bss.length ;i++ )
+				{
+					if(bss[i].checked){
+						bsv = bss[i].value;
+					}
+				}
+				if(jqv==1){					
+					if(bsv==1){
+						var temp = "";
+						temp+="/*\r\n";
+						temp+="@url:"+obj.sourceurl.value+"\r\n";
+						temp+="@name:"+obj.airlinename.value+"\r\n";
+						temp+="*/\r\n";
+						temp+="var CHECKData = function() {\r\n";
+						temp+="	this.getData = function(domain) {\r\n";
+						temp+="		var result = '';\r\n";
+						temp+="		if (domain == '"+obj.sourceurl.value.split("/")[2]+"') {\r\n";
+						temp+="			var depselects = document.getElementsByName('"+obj.dep.value+"');\r\n";
+						temp+="			if(depselects.length>1){\r\n";
+						temp+="				alert('发现同名下拉框，请优先使用ID方式，不支持ID则需要修改下方下标。');\r\n";
+						temp+="			}\r\n";
+						temp+="			var depselect = document.getElementsByName('"+obj.dep.value+"')[0];\r\n";
+						temp+="			for(var i = 0;i<depselect.options.length;i++){\r\n";
+						temp+="				if(depselect.options[i].selected){\r\n";
+						temp+="					depselect.options[i].selected = false;\r\n";
+						temp+="					break;\r\n";
+						temp+="				}\r\n";
+						temp+="			}\r\n";
+						temp+="			for (var i = "+obj.depindex.value+"; i < depselect.options.length; i++) {	\r\n";
+						temp+="				depselect.options[i].selected = true;				\r\n";
+						temp+="				depselect.onchange();\r\n";
+						temp+="				var dep = depselect.options[i].value;\r\n";
+						temp+="				var arrselects = document.getElementsByName('"+obj.arr.value+"');\r\n";
+						temp+="				if(arrselects.length>1){\r\n";
+						temp+="					alert('发现同名下拉框，请优先使用ID方式，不支持ID则需要修改下方下标。');					\r\n";
+						temp+="				}\r\n";
+						temp+="				var arrselect = document.getElementsByName('"+obj.arr.value+"')[0];\r\n";
+						temp+="				for (var j = "+obj.arrindex.value+"; j < arrselect.options.length; j++) {\r\n";
+						temp+="					var arr = arrselect.options[j].value;\r\n";
+						temp+="					result += dep + '-' + arr + ',';\r\n";
+						temp+="				}\r\n";
+						temp+="				depselect.options[i].selected = false;\r\n";
+						temp+="			}\r\n";
+						temp+="		}\r\n";
+						temp+="		return result;\r\n";
+						temp+="	}\r\n";
+						temp+="    this.showAirlineList = function(domain) {\r\n";
+						temp+="		var textarea = document.getElementById('airlinetext');\r\n";
+						temp+="		if(!textarea) textarea = document.createElement('textarea');\r\n";
+						temp+="        textarea.id = 'airlinetext';\r\n";
+						temp+="        textarea.style.width = '100%';\r\n";
+						temp+="        textarea.style.height = '200px';\r\n";
+						temp+="        textarea.style.fontSize = '14px';\r\n";
+						temp+="        document.body.insertBefore(textarea, document.body.firstChild);\r\n";
+						temp+="		textarea.innerText=this.getData(domain);\r\n";
+						temp+="    }\r\n";
+						temp+="}\r\n";
+						temp+="new CHECKData().showAirlineList(window.location.host);\r\n";
+						jsresult.innerText=temp;
+					}else{
+						var temp = "";
+						temp+="/*\r\n";
+						temp+="@url:"+obj.sourceurl.value+"\r\n";
+						temp+="@name:"+obj.airlinename.value+"\r\n";
+						temp+="*/\r\n";
+						temp+="var CHECKData = function() {\r\n";
+						temp+="	this.getData = function(domain) {\r\n";
+						temp+="		var result = '';\r\n";
+						temp+="		if (domain == '"+obj.sourceurl.value.split("/")[2]+"') {\r\n";
+						temp+="			var depselect = document.getElementById('"+obj.dep.value+"');\r\n";
+						temp+="			for(var i = 0;i<depselect.options.length;i++){\r\n";
+						temp+="				if(depselect.options[i].selected){\r\n";
+						temp+="					depselect.options[i].selected = false;\r\n";
+						temp+="					break;\r\n";
+						temp+="				}\r\n";
+						temp+="			}\r\n";
+						temp+="			for (var i = "+obj.depindex.value+"; i < depselect.options.length; i++) {	\r\n";
+						temp+="				depselect.options[i].selected = true;				\r\n";
+						temp+="				depselect.onchange();\r\n";
+						temp+="				var dep = depselect.options[i].value;\r\n";
+						temp+="				var arrselect = document.getElementById('"+obj.arr.value+"');\r\n";
+						temp+="				for (var j = "+obj.arrindex.value+"; j < arrselect.options.length; j++) {\r\n";
+						temp+="					var arr = arrselect.options[j].value;\r\n";
+						temp+="					result += dep + '-' + arr + ',';\r\n";
+						temp+="				}\r\n";
+						temp+="				depselect.options[i].selected = false;\r\n";
+						temp+="			}\r\n";
+						temp+="		}\r\n";
+						temp+="		return result;\r\n";
+						temp+="	}\r\n";
+						temp+="    this.showAirlineList = function(domain) {\r\n";
+						temp+="		var textarea = document.getElementById('airlinetext');\r\n";
+						temp+="		if(!textarea) textarea = document.createElement('textarea');\r\n";
+						temp+="        textarea.id = 'airlinetext';\r\n";
+						temp+="        textarea.style.width = '100%';\r\n";
+						temp+="        textarea.style.height = '200px';\r\n";
+						temp+="        textarea.style.fontSize = '14px';\r\n";
+						temp+="        document.body.insertBefore(textarea, document.body.firstChild);\r\n";
+						temp+="		textarea.innerText=this.getData(domain);\r\n";
+						temp+="    }\r\n";
+						temp+="}\r\n";
+						temp+="new CHECKData().showAirlineList(window.location.host);\r\n";
+						jsresult.innerText=temp;
+					}
+
+				}else{						
+					if(bsv==1){
+						var temp = "";
+						temp+="/*\r\n";
+						temp+="@url:"+obj.sourceurl.value+"\r\n";
+						temp+="@name:"+obj.airlinename.value+"\r\n";
+						temp+="*/\r\n";
+						temp+="var CHECKData = function() {\r\n";
+						temp+="	this.getData = function(domain) {\r\n";
+						temp+="		var result = '';\r\n";
+						temp+="		if (domain == '"+obj.sourceurl.value.split("/")[2]+"') {if(!$){$=jQuery;}\r\n";
+						temp+="			for (var i =  "+obj.depindex.value+"; i < $('select[name="+obj.dep.value+"] option').length; i++) {\r\n";
+						temp+="				$('select[name="+obj.dep.value+"] option[selected]').removeAttr('selected');\r\n";
+						temp+="				$('select[name="+obj.dep.value+"] option:eq(' + i + ')').attr('selected', 'true');\r\n";
+						temp+="				$('select[name="+obj.dep.value+"]').change();\r\n";
+						temp+="				var dep = $('select[name="+obj.dep.value+"]').val();\r\n";
+						temp+="				for (var j =  "+obj.arrindex.value+"; j < $('select[name="+obj.arr.value+"] option').length; j++) {\r\n";
+						temp+="					var arr = $('select[name="+obj.arr.value+"] option:eq(' + j + ')').val();\r\n";
+						temp+="					result += dep + '-' + arr + ',';\r\n";
+						temp+="				}\r\n";
+						temp+="			}\r\n";
+						temp+="		}\r\n";
+						temp+="		return result;\r\n";
+						temp+="	}\r\n";
+						temp+="    this.showAirlineList = function(domain) {\r\n";
+						temp+="		var textarea = document.getElementById('airlinetext');\r\n";
+						temp+="		if(!textarea) textarea = document.createElement('textarea');\r\n";
+						temp+="        textarea.id = 'airlinetext';\r\n";
+						temp+="        textarea.style.width = '100%';\r\n";
+						temp+="        textarea.style.height = '200px';\r\n";
+						temp+="        textarea.style.fontSize = '14px';\r\n";
+						temp+="        document.body.insertBefore(textarea, document.body.firstChild);\r\n";
+						temp+="		textarea.innerText=this.getData(domain);\r\n";
+						temp+="    }\r\n";
+						temp+="}\r\n";
+						temp+="new CHECKData().showAirlineList(window.location.host);\r\n";
+						jsresult.innerText=temp;
+					}else{
+						var temp = "";
+						temp+="/*\r\n";
+						temp+="@url:"+obj.sourceurl.value+"\r\n";
+						temp+="@name:"+obj.airlinename.value+"\r\n";
+						temp+="*/\r\n";
+						temp+="var CHECKData = function() {\r\n";
+						temp+="	this.getData = function(domain) {\r\n";
+						temp+="		var result = '';\r\n";
+						temp+="		if (domain == '"+obj.sourceurl.value.split("/")[2]+"') {if(!$){$=jQuery;}\r\n";
+						temp+="			for (var i = "+obj.depindex.value+"; i < $('#"+obj.dep.value+" option').length; i++) {\r\n";
+						temp+="				$('#"+obj.dep.value+" option[selected]').removeAttr('selected');\r\n";
+						temp+="				$('#"+obj.dep.value+" option:eq(' + i + ')').attr('selected', 'true');\r\n";
+						temp+="				$('#"+obj.dep.value+"').change();\r\n";
+						temp+="				var dep = $('#"+obj.dep.value+"').val();\r\n";
+						temp+="				for (var j = "+obj.arrindex.value+"; j < $('#"+obj.arr.value+" option').length; j++) {\r\n";
+						temp+="					var arr = $('#"+obj.arr.value+" option:eq(' + j + ')').val();\r\n";
+						temp+="					result += dep + '-' + arr + ',';\r\n";
+						temp+="				}\r\n";
+						temp+="			}\r\n";
+						temp+="		}\r\n";
+						temp+="		return result;\r\n";
+						temp+="	}\r\n";
+						temp+="    this.showAirlineList = function(domain) {\r\n";
+						temp+="		var textarea = document.getElementById('airlinetext');\r\n";
+						temp+="		if(!textarea) textarea = document.createElement('textarea');\r\n";
+						temp+="        textarea.id = 'airlinetext';\r\n";
+						temp+="        textarea.style.width = '100%';\r\n";
+						temp+="        textarea.style.height = '200px';\r\n";
+						temp+="        textarea.style.fontSize = '14px';\r\n";
+						temp+="        document.body.insertBefore(textarea, document.body.firstChild);\r\n";
+						temp+="		textarea.innerText=this.getData(domain);\r\n";
+						temp+="    }\r\n";
+						temp+="}\r\n";
+						temp+="new CHECKData().showAirlineList(window.location.host);\r\n";
+						jsresult.innerText=temp;
+					}
+				}
+			}
+		-->
+        </script> 
+  <form method="POST" action="" name="cform" id="cform">
+    来源网址: 
+   <input type="text" name="sourceurl" value="http://www.cnblogs.com/rainman/archive/2011/09/05/2168162.html" /> 
+   <br /> 航司名称: 
+   <input type="text" name="airlinename" value="XX航空" /> 
+   <br /> JQuery： 
+   <input type="radio" name="jq" value="0" checked="checked" />支持
+   <input type="radio" name="jq" value="1" />不支持 
+   <br /> 元素标识方法： 
+   <input type="radio" name="bs" value="0" checked="checked" />通过ID
+   <input type="radio" name="bs" value="1" />通过name 
+   <br /> 出发机场标识: 
+   <input type="text" name="dep" /> 
+   <br /> 出发机场起始: 
+   <input type="text" name="depindex" value="0" /> 包含非机场option填1，默认0开始
+   <br /> 到达机场标识: 
+   <input type="text" name="arr" /> 
+   <br /> 到达机场起始: 
+   <input type="text" name="arrindex" value="0" /> 包含非机场option填1，默认0开始
+   <br /> 
+   <input type="button" value="CreateJS" onclick="createjs('cform')" /> 
+  </form> 
+  <hr /> 
+  <pre>
+ 
+	助手适用条件：
+
+			1. 网站起飞机场和到达机场使用的是 Select 下拉框
+			2. 起飞机场变化，到达机场列表会随之变化
+			3. 检查网站是否支持 jQuery的方法，在控制台输入 alert(!!window.jQuery);
+			4. 设置起始标识是为了过滤无效的option默认值
+			5. 未完待续
+			montenegroairlines.com
+			www.airnorth.com.au
+			www.fujidream.co.jp
+			www.gmairlines.com
+			www.malmoaviation.se
+			www.nordavia.ru
+			www.skymark.co.jp
+			www.spirit.com
+		</pre>   
+ </body>
+</html>
