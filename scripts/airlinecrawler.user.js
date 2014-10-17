@@ -42,8 +42,22 @@
 // @include	 https://www.etihadregional.com/en/index.html
 // @include	 http://www.flyscoot.com/index.php/zh/
 // @include	 http://www.twayair.com/service/reserve_route_Global.aspx
+// @include	 http://www.spirit.com/Default.aspx
+// @include	 http://www.skymark.co.jp/ja/
+// @include	 http://www.nordavia.ru/en/
+// @include	 http://www.malmoaviation.se/en
+// @include	 http://www.luxair.lu/cms/*
+// @include	 http://www.gmairlines.com/
+// @include	 http://www.fujidream.co.jp/
+// @include	 http://www.buddhaair.com/
+// @include	 http://www.blueairweb.com/destinations/destinations-map
+// @include	 http://www.airnorth.com.au/
+// @include	 http://www.airblue.com/sched/schedule_popup.asp
+// @include	 http://wowair.co.uk/
+// @include	 https://primeraair.com/searchFlights.do?lang=en
+// @include	 http://montenegroairlines.com/
 // @exclude     http://*.qunar.com/*
-// @version     1.4
+// @version     1.5
 // @grant       none
 // ==/UserScript==
 
@@ -66,11 +80,11 @@ document.addEventListener('dblclick', function (event) {
     var textarea = document.createElement('textarea');
     textarea.id="airlinetext";
     textarea.style.width = "100%";
-	  textarea.style.height = "200px";
-	  textarea.style.fontSize = '14px';
+	textarea.style.height = "200px";
+	textarea.style.fontSize = '14px';
     document.body.insertBefore(textarea, document.body.firstChild);
 	if(document.location.protocol=="https:"){
-		airlinetext.innerHTML="该网站是https的，chrome 用户不支持，firefox 用户，注意地址栏左边提示，可能需要点击选择 临时解除保护此页";
+		textarea.innerHTML="该网站是https的，chrome 用户不支持，firefox 用户，注意地址栏左边提示，可能需要点击选择【临时解除保护此页】";
 	}
   }
   // 如果您想阻止默认点击动作
